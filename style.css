@@ -1,0 +1,120 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box; 
+}
+
+.header 
+{
+    background-image: url(Archivos/HeadFoot.jpg);
+    padding-bottom: 75px;
+    clear: both;  
+     
+}
+
+.logoheader
+{
+    width: 300px;
+    float: left;
+    padding: 0px;
+}
+
+.navbar
+{
+    float: left;
+}
+
+.titulo 
+{
+    font-size: 60px;
+    color: black;
+            
+}
+
+.subtitulo 
+{
+    font-size: 40px;
+    color: black;
+    display: inline
+    
+}
+
+.marcador 
+{
+    font-size: 20px;
+    margin-left: 25px;
+    padding-right: 50px;
+    list-style: none;
+    font-weight: bold; 
+    position: relative; 
+    
+
+}
+
+.body 
+{
+   	font-family: 'Roboto', sans-serif;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contenedor 
+{
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+}
+
+.card 
+{
+    background-color: rgb(127, 140, 255);
+    border-radius: 10px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+}
+	
+.textos {
+	height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	
+}
+
+
+.footer
+{
+    background-image: url(Archivos/HeadFoot.jpg);
+    width: 2000px;
+    height: 500px;
+    padding-top: px;
+    padding-left: 20px;
+        
+}
+
+.logofooter
+{
+    width: 500px;
+    float: right;
+}
+
+.marcadorfoot
+{
+    font-size: 20px;
+    border-style: outset;
+    border-color: rgb(9, 13, 201);
+    border-radius: 10px;
+    border-width: 10px;
+    margin: 10px;
+}
+
