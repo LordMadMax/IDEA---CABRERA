@@ -7,96 +7,92 @@
     <title>HOME</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css"/>
+	<link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
-<header class="header">
-
-    <div class="tituloheader">
-        <img class="logoheader" src="Archivos/Logo.png">
-        <h1 class="titulo">Web Management</h1>
-        <h2 class="subtitulo">TECNOLOGÍA Y MARKETING</h2>
-    </div>
-    <br>
-        
-	<nav class="navbar">
-		
-		<a class="marcador" href="index.html">HOME</a>
-		<a class="marcador" href="Informacion.html">INFORMACION</a>    
-		<a class="marcador" href="Porfolio.html">PORFOLIO</a>
-		<a class="marcador" href="Servicios.html">SERVICIOS</a>
-		<a class="marcador" href="Contacto.html">CONTACTO</a>
-
-	</nav>
+<header class="background_image">
+	<div class="container-fluid">
+		<div class="row">
+			<img class="col-md-3" src="Archivos/Logo.png">
+			<p class="display-1 col-md-9">Web Management <br/> TECNOLOGÍA Y MARKETING<p>
+		</div>
+	</div>
 </header>
+
+<nav class="container">
+	<div class="row">	
+		<a class="col-md-2" href="index.html">HOME</a>
+		<a class="col-md-2" href="Informacion.html">INFORMACION</a>    
+		<a class="col-md-2" href="Porfolio.html">PORFOLIO</a>
+		<a class="col-md-2" href="Servicios.html">SERVICIOS</a>
+		<a class="col-md-2" href="Contacto.html">CONTACTO</a>
+	</div>
+</nav>
 
 <body>
 
-<div class="body">
+<div class="container">
 	<h2>¿Qué hacemos?</h2>
 	<p>Nacimos insertos en la era digital, y contando con una basta experiencia y un largo camino recorrido el cual nos sirve para guiarte, posicionar tu marca y negocio a lo alto del area de las redes sociales es nuestra meta final.</p>
 
-    <div>
-		<div class="contenedor">
-			<div class="card">
+    	<div class="row">
+			<div class="col-md-4">
 				<div class="textos">
 					<h3>Marketing Digital</h3>
 					<p>Te asesoramos en la creación de estrategias y acciones de marketing digital, social media, comunicación y ventas.</p>
 				</div>
 			</div>
-			<div class="card">
+			<div class="col-md-4">
 				<div class="textos">
 					<h3>WEB/e Commerce</h3>
 					<p>Desarrollar tus sitios con diseño centrado en el usuario, para generar la mejor experiencia para tus clientes.</p>
 				</div>
 			</div>
-			<div class="card">
+			<div class="col-md-4">
 				<div class="textos">
 					<h3>Diseño & Branding</h3>
 					<p>Trabajamos el desarrollo de tu marca en todos sus ámbitos. Identidad corporativa y creación de marcas.</p>
 				</div>
 			</div>
 
-			<div class="card">
+			<div class="col-md-4">
 				<div class="textos">
 					<h3>Audiovisual</h3>
 					<p>Realizamos desde cero un video corporativo, publicitario, animaciones y piezas para tus redes sociales.</p>
 				</div>
 			</div>
-			<div class="card">
+			<div class="col-md-4">
 				<div class="textos">
 					<h3>Fotografía</h3>
 					<p>Generamos fotografías para tu ecommerce, tu web, tus redes sociales o simplemente para mejorar el contenido visual de tu marca.</p>
 				</div>
 			</div>
-			<div class="card">
+			<div class="col-md-4">
 				<div class="textos">
 					<h3>Consultoría</h3>
 					<p>Realizamos investigaciones y acompañamos a tu organización en la implantación de las acciones sugeridas, ya sea capacitando al personal o colaborando directamente con ustedes.</p>
 				</div>
 			</div>
 		</div>
-	</div>
 </div>
 </body>
 
-<footer class="footer">
-        
-    <img class="logofooter" src="Archivos/Logo.png">
+<footer class="background_image">
 
-    <p class="subtitulo">DEJA QUE NOSOTROS DESARROLLEMOS TU MARKETING</p>
-    <br/>
-    <br/>
-    <a class="marcadorfoot" target="_blank" href="https://es-la.facebook.com/">SIGUENOS EN FACEBOOK</a>
-    <br/>
-    <br/>
-    <a class="marcadorfoot" target="_blank" href="https://www.instagram.com/">SIGUENOS EN INSTAGRAM</a>
-    <br/>
-    <br/>
-    <a class="marcadorfoot" href="https://www.google.com/">VOLVER A GOOGLE</a>
-    <br/>
-    <br/>
-    <a class="marcadorfoot" target="_blank" href="mailto:maxicabel07@gmail.com">CORREO ELECTRÓNICO</a>
-    <p>Copyright 2022</p>    
-
+<div class="container">	
+    <div class="row">
+		<p class="h1">DEJA QUE NOSOTROS DESARROLLEMOS TU MARKETING</p>
+	</div>
+    <div class="row">
+		<a class="col-md-3" target="_blank" href="https://es-la.facebook.com/">SIGUENOS EN FACEBOOK</a>
+		<a class="col-md-3" target="_blank" href="https://www.instagram.com/">SIGUENOS EN INSTAGRAM</a>
+		<a class="col-md-3" href="https://www.google.com/">VOLVER A GOOGLE</a>
+		<a class="col-md-3" target="_blank" href="mailto:maxicabel07@gmail.com">CORREO ELECTRÓNICO</a>
+    </div>   
+	<div class="row">
+		<p class="subtitulo">Copyright 2022</p>    
+	</div>
+</div>
+	<script src="js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </footer>
 </html> 
