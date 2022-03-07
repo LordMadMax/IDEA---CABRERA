@@ -6,6 +6,7 @@
 <head>
     <title>HOME</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css"/>
 	<link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
@@ -13,59 +14,82 @@
 <header class="background_image">
 	<div class="container-fluid">
 		<div class="row">
-			<img class="col-md-3" src="Archivos/Logo.png">
-			<p class="display-1 col-md-9">Web Management <br/> TECNOLOGÍA Y MARKETING<p>
+			<p class="display-3 col-md-9 text-light">Web Management <br/> TECNOLOGÍA Y MARKETING<p>
 		</div>
 	</div>
 </header>
-
-<nav class="container">
-	<div class="row">	
-		<a class="col-md-2" href="index.html">HOME</a>
-		<a class="col-md-2" href="Informacion.html">INFORMACION</a>    
-		<a class="col-md-2" href="Porfolio.html">PORFOLIO</a>
-		<a class="col-md-2" href="Servicios.html">SERVICIOS</a>
-		<a class="col-md-2" href="Contacto.html">CONTACTO</a>
+ 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="index.html"><span class="text-primary fs-5 fw-bold">WEB Management</span></a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			<li class="nav-item">
+			<a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="Informacion.html">INFORMACIÓN</a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="Porfolio.html">POROFOLIO</a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="Servicios.html">SERVICIOS</a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="Contacto.html">CONTACTO</a>
+			</li>
+		</ul>
+		
+		</form>
+		</div>
 	</div>
 </nav>
+
 <body>
 <div class="container">
     <br/>
     <form>
-        <label for="NOMBRE">NOMBRE</label>
-        <input id="NOMBRE" name="nombre" placeholder="Escriba su nombre aquí"/>
-        <br/>
-        <label for="APELLIDO">APELLIDO</label>
-        <input id="APELLIDO" name="apellido" placeholder="Escriba su apellido aquí"/>
-        <br/>        
-        <label for="COMENTARIO">COMENTARIO</label>
-        <br/>
-        <textarea cols="30" rows="10" id="COMENTARIO" placeholder="Dejenos su comentario" name="comentario"></textarea>
-        <br/>
-        <input type="submit"><button type="reset">Borrar</button>
-
-        <p>SI QUIERES TRABAJAR CON NOSOTROS HAZNOS LLEGAR TU C.V. A NUESTRA CASILLA DE CORREO</p>
-        <a href="mailto:maxicabel07@gmail.com">CORREO ELECTRÓNICO</a>
-    </form>       
-
-</div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="000 000 000">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Comentarios y/o consultas</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="mb-3">
+            <button class="btn btn-primary w-100 fs-5">Enviar mensaje</button>
+          </div>
+      </form>
+    
+    <a target="_blank" href="https://www.google.com.uy/maps/place/Avenida+18+de+Julio+%26+Convenci%C3%B3n,+11100+Montevideo,+Departamento+de+Montevideo/@-34.9063256,-56.1992005,17z/data=!3m1!4b1!4m5!3m4!1s0x959f802c963db833:0x8bc7a20ee7fa5a96!8m2!3d-34.9063256!4d-56.1970065?hl=es-419"> 
+        <img src="Archivos/Mapa.png" class="img-fluid mx-auto d-block" type="button"/>
+    </a>
+    </div>
+<br/>
 </body>
 
 <footer class="background_image">
-    <div class="container">	
-        <div class="row">
-            <p class="h1">DEJA QUE NOSOTROS DESARROLLEMOS TU MARKETING</p>
-        </div>
-        <div class="row">
-            <a class="col-md-3" target="_blank" href="https://es-la.facebook.com/">SIGUENOS EN FACEBOOK</a>
-            <a class="col-md-3" target="_blank" href="https://www.instagram.com/">SIGUENOS EN INSTAGRAM</a>
-            <a class="col-md-3" href="https://www.google.com/">VOLVER A GOOGLE</a>
-            <a class="col-md-3" target="_blank" href="mailto:maxicabel07@gmail.com">CORREO ELECTRÓNICO</a>
-        </div>   
-        <div class="row">
-            <p class="subtitulo">Copyright 2022</p>    
-        </div>
-    </div>
-    <script src="js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<div class="container">	
+		<div class="row">
+			<p class="display-6 text-light">DEJA QUE NOSOTROS DESARROLLEMOS TU MARKETING</p>
+			<p class="fs-4 text-light">Web Management &copy; Todos los derechos reservados 2022</p>
+		</div>
+		<div class="w-100 d-flex align-items justify-content-center flex-wrap" id="iconos">
+			<a target="_blank" type="button" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+			<a target="_blank" type="button" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+			<a target="_blank" type="button" href="https://wwww.twitter.com/"><i class="bi bi-twitter"></i></a>
+			<a target="_blank" type="button" href="https://wwww.google.com/"><i class="bi bi-google"></i></a>
+		</div>   
+	</div>
+	<script src="js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </footer>
 </html> 

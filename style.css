@@ -7,7 +7,22 @@
  .background_image 
  {
     background-image: url(Archivos/HeadFoot.jpg);
-    max-height: 300px;  
+    max-height: 200px;  
     padding-bottom: 125px;  
 } 
- 
+
+.footer p 
+{
+    color:aliceblue;
+    text-align: center;
+
+}
+
+#iconos 
+{
+    font-size: 20px;
+    padding: 0px 8px;
+    color:aliceblue;
+    gap: 40px;
+
+}
