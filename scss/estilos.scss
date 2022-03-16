@@ -1,30 +1,60 @@
-* {
+*
+{
     padding: 0;
     margin: 0;
     box-sizing: border-box; 
- }
+}
  
  .background_image 
- {
+{
     background-image: url(../Archivos/HeadFoot.jpg);
     max-height: 200px;
     padding-bottom: 125px;
 } 
 
-.footer p 
+.container, .header, .footer 
 {
-    color:white;
-    text-align: center;
-
+    width: 80%;
+    padding-bottom: 20px;
+    margin: auto;
 }
 
-#iconos 
-{
-    font-size: 20px;
-    padding: 0px 8px;
-    color:white;
-    gap: 40px;
+$colores: (color1: #555555, color2: #777777, color3: #999999);
 
+@each $clave, $valor in $colores 
+{
+    .#{$clave} 
+    {
+        color: $clave;
+        background-color: $valor;
+    }
+} 
+
+.btn
+{
+    border: none;
+    border-radius: 4px;
+    padding: 2px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.navbar-brand
+{
+    @extend .btn;
+    background-color: #6485ed;
+}
+
+.nav-item
+{
+    @extend .btn;
+    :hover
+    {
+        color:#6485ed;
+        transform: scale(1.1);
+    }
 }
 
 .lista 
@@ -36,5 +66,60 @@
         font-size: 20px;
         font-style:oblique;
     }
+}
 
+@mixin caja-flex ($horizontal, $vertical, $wrap)
+{
+    display: flex;
+    justify-content: $horizontal;
+    align-items: $vertical;
+    flex-wrap: $wrap;
+}
+
+.flex-box
+{
+    @include caja-flex (center, center, nowrap);
+}
+
+.flex-item 
+{
+    min-width: 33%;
+}
+
+#iconos 
+{
+    font-size: 40px;
+    padding-bottom: 20px;
+    color:white;
+    gap: 60px;
+    :hover
+    {
+        transform: scale(1.3);
+    }
+
+}  
+
+// Pantallas Extra Grandes y Grandes
+
+@media (min-width: 1400px)
+{
+     
+}
+
+// Pantallas Medianas
+
+@media (max-width: 992px)
+{
+    .flex-box {
+        flex-wrap: wrap;
+    }
+}
+
+// Pantallas Pequeñas
+
+@media (max-width: 420px)
+{
+    .flex-box {
+        flex-wrap: wrap;
+    }
 }
